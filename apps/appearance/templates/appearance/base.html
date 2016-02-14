@@ -37,10 +37,9 @@
         {% else %}
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
-                    <div class="navbar-header">
-                        {# TODO: don't use hardcoded main:home use settings.LOGIN_REDIRECT_URL #}
-                        <a class="navbar-brand" href="{% url 'common:home' %}"><img src="{% static 'appearance/images/yelloLogo.jpg' %}" height="50px" width="100%" alt="parker logo"></a>
-                    </div>
+                	<a class="navbar-header" href="{% url 'common:home' %}">
+                		<img src="{% static 'appearance/images/yelloLogo.jpg' %}" height="100%" width="100%" alt="parker logo">
+                	</a>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             {% get_menu_links 'main menu' as menu_links %}
