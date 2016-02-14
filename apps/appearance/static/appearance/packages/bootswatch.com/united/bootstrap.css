@@ -1346,7 +1346,7 @@ mark,
 }
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #ae3910;
+  color: #FFB91D;
 }
 .text-success {
   color: #468847;
@@ -1382,7 +1382,7 @@ a.text-danger:focus {
 }
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #ae3910;
+  background-color: #FFB91D;
 }
 .bg-success {
   background-color: #dff0d8;
@@ -3128,19 +3128,19 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:focus,
 .btn-primary.focus {
   color: #ffffff;
-  background-color: #ae3910;
+  background-color: #FFB91D;
   border-color: #682209;
 }
 .btn-primary:hover {
   color: #ffffff;
-  background-color: #ae3910;
+  background-color: #FFB91D;
   border-color: #a5360f;
 }
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #ae3910;
+  background-color: #FFB91D;
   border-color: #a5360f;
 }
 .btn-primary:active:hover,
@@ -4526,7 +4526,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #ae3910;
+  background-color: #FFB91D;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4551,7 +4551,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #ae3910;
+  background-color: #FFB91D;
   color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -4567,7 +4567,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #ae3910;
+    background-color: #FFB91D;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -4886,7 +4886,7 @@ a.label:focus {
 }
 .label-primary[href]:hover,
 .label-primary[href]:focus {
-  background-color: #ae3910;
+  background-color: #FFB91D;
 }
 .label-success {
   background-color: #38b44a;
