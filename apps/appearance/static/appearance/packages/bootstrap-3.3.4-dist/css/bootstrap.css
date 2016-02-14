@@ -1132,10 +1132,6 @@ img {
 .img-rounded {
   border-radius: 6px;
 }
-.img-logo {
-  width: 50%;
-  height: 50%;
-}
 .img-thumbnail {
   display: inline-block;
   max-width: 100%;
