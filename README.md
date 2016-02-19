@@ -1,7 +1,7 @@
 # mayan
 
-###WARNING:
-This is my own fork, and I have made modifications, if you wish to try mayan-edms, please download it from it's original source. What is written below is for my own use, and may not work in your case. My way of installing mayan-edms is most likely the improper way, but it has worked for my own specific environment.
+#####WARNING:
+This is my own fork, and I have made modifications, if you wish to try mayan-edms, please download it from it's original source. What is written below is for my own use, and may not work in your case. My way of installing mayan-edms is most likely the improper way, but it has worked for my own specific environment. This repository is for my own individual learning experience about mayan edms. You may look through my notes, it may help you to also understand how mayan-edms works.
 
 #####INSTALLING MAYAN:
 
@@ -57,7 +57,7 @@ CD into the directory where mayan-edms.py resides:
 cd mayan/bin
 ```
 
-######SETTING UP MAYAN:
+#####SETTING UP MAYAN:
 
 ```
 python mayan-edms.py initialsetup
@@ -187,7 +187,7 @@ js scripts in mayan_edms/contrib/scripts
 
 
 
-MAYAN FILE STRUCTURE
+#####MAYAN FILE STRUCTURE
 
 IMAGES: /mayan/apps/appearance/static/appearance/images
 favicon.ico		← The icon which shows at the very top of the screen in the browser.
@@ -205,7 +205,7 @@ base.html			← Appears to be the main HTML file that everything else attaches t
 
 
 
-My project notes:
+#####My project notes:
 Use remote database
 use s3 drive
 I need to learn bootstrap and work on the theme
