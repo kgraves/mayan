@@ -3,50 +3,86 @@
 ###WARNING:
 This is my own fork, and I have made modifications, if you wish to try mayan-edms, please download it from it's original source. What is written below is for my own use, and may not work in your case. My way of installing mayan-edms is most likely the improper way, but it has worked for my own specific environment.
 
-INSTALLING MAYAN:
+#####INSTALLING MAYAN:
 
 Enter tmux session:
 tmux or tmux attach
 (This allows you to exit the terminal without killing the mayan-edms process).
 
 Enter root:
+```
 sudo -i
+```
 (If you do not run this, you will have to type 'sudo' before every command)
 
 Install dependencies:
+
+```
 apt-get update && apt-get install -y netcat-openbsd python-dev python-pip gpgv nginx libpq-dev git-core libjpeg-dev libmagic1 libpng-dev libreoffice libtiff-dev gcc ghostscript gpgv tesseract-ocr unpaper poppler-utils && apt-get clean && rm -rf /var/lib/apt/lists/* && rm -f /var/cache/apt/archives/*.deb
+```
 
 Install mayan-edms:
+
+```
 pip install mayan-edms
+```
 
 CD into the python dist-packages folder:
+
+```
 cd /usr/local/lib/python2.7/dist-packages
+```
 
 Remove old mayan directory, if cloning from github:
+
+```
 rm -r mayan
+```
 
 Clone from github:
+
+```
 git clone [github repository address]
+```
 
 What I used:
+
+```
 git clone https://github.com/trillobite/mayan.git
+```
 
 CD into the directory where mayan-edms.py resides:
-cd mayan/bin
 
-SETTING UP MAYAN:
+```
+cd mayan/bin
+```
+
+######SETTING UP MAYAN:
+
+```
 python mayan-edms.py initialsetup
+```
 
 Start it:
+
+```
 python mayan-edms.py runserver
+```
 
 Install nginx:
+
+```
 sudo apt-get install nginx
+```
 
 Setup the nginx config:
+
+```
 cd /etc/nginx
 vim nginx.conf
+```
 
+```
 user  root;
 worker_processes  1;
 
@@ -82,10 +118,14 @@ http {
         listen    8080;
     }
 }
+```
 
+```
 cd /etc/nginx/conf.d
 vim default.conf
+```
 
+```
 server {
     listen       8080;
     #server_name  localhost;
@@ -101,10 +141,14 @@ server {
         proxy_set_header    Via                 "nginx";
     }
 }
+```
 
+```
 cd /etc/nginx/sites-available
 vim default
+```
 
+```
 server {
         listen 8080 default_server;
         listen [::]:8080 default_server;
@@ -122,10 +166,13 @@ server {
                 try_files $uri $uri/ =404;
         }
 }
+```
 
 restart nginx:
-service nginx reload
 
+```
+service nginx reload
+```
 
 
 
