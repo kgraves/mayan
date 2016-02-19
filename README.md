@@ -30,12 +30,24 @@ pip install mayan-edms
 CD into the python dist-packages folder:
 
 ```
+cd /usr/local/lib/python2.7/dist-packages/mayan/bin
+```
+
+Do the mayan setup:
+
+```
+python mayan-edms.py initialsetup
+```
+
+Run it to ensure everything is working for now:
+
+```
+python mayan-edms.py runserver
+```
+Now, if importing stuff from github:
+
+```
 cd /usr/local/lib/python2.7/dist-packages
-```
-
-Remove old mayan directory, if cloning from github:
-
-```
 rm -r mayan
 ```
 
