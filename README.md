@@ -1,4 +1,8 @@
 # mayan
+
+###WARNING:
+This is my own fork, and I have made modifications, if you wish to try mayan-edms, please download it from it's original source. What is written below is for my own use, and may not work in your case. My way of installing mayan-edms is most likely the improper way, but it has worked for my own specific environment.
+
 INSTALLING MAYAN:
 
 Enter tmux session:
