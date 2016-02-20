@@ -59,7 +59,9 @@
 
     {% build as build_number %}
     <div class="well">
-        <h3 class="text-center">{% project_name %} ({% trans 'Version' %} {% project_version %})</h3>
+        <h3 class="text-center">
+          Parker Hannifin EDMS (powered by {% project_name %} {% trans 'Version' %} {% project_version %})
+        </h3>
         {% if build_number %}
             <p class='text-center'>{% blocktrans with build_number as build_number %}Build number: {{ build_number }}{% endblocktrans %}</p>
         {% endif %}
